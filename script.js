@@ -188,7 +188,7 @@
   if (!form) return;
 
   // ⬇️ COLE AQUI A URL DO SEU WEBHOOK DO DISCORD
-  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1490762391363911912/kuQaF9PRAnnxDnCuS4kiPL-BlCzz9n8-rKJ4vBOFzuprwqDkJcb5CePEzlRVUlG274qQ";
+  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1490803974448873494/NUsdAj9kJptvnVBuQDGldRi8ZiI976NFPqPZgaVNUXgHx64IJUvwf-1juTSrt8aauTkD";
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
