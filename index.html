@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scuderia Overdrive — F1 no FiveM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">OVERDRIVE</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-text" id="loaderText">INICIALIZANDO...</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-text">OVERDRIVE</span>
+      <span class="nav-logo-sub">SCUDERIA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#pilotos" class="nav-link">Pilotos</a></li>
+      <li><a href="#carros" class="nav-link">Carros</a></li>
+      <li><a href="#equipe" class="nav-link">Equipe</a></li>
+      <li><a href="#parceiros" class="nav-link">Parceiros</a></li>
+      <li><a href="#ingresso" class="nav-link nav-cta">Ingressar</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+      <li><a href="#pilotos" class="mobile-link">Pilotos</a></li>
+      <li><a href="#carros" class="mobile-link">Carros</a></li>
+      <li><a href="#equipe" class="mobile-link">Equipe</a></li>
+      <li><a href="#parceiros" class="mobile-link">Parceiros</a></li>
+      <li><a href="#ingresso" class="mobile-link">Ingressar</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-stripe hero-stripe--1"></div>
+      <div class="hero-stripe hero-stripe--2"></div>
+      <div class="hero-stripe hero-stripe--3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        PRIMEIRA EQUIPE DE F1 DO FIVEM
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-top">SCUDERIA</span>
+        <span class="hero-title-main">OVERDRIVE</span>
+      </h1>
+      <p class="hero-subtitle">O automobilismo chegou ao GTA RP. <br/>Velocidade. Estratégia. Profissionalismo.</p>
+      <div class="hero-actions">
+        <a href="#ingresso" class="btn btn--primary">Fazer Parte da Equipe</a>
+        <a href="#sobre" class="btn btn--ghost">Conhecer a Scuderia</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+    <div class="hero-number">001</div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa História</span>
+        <h2 class="section-title">Pioneiros do<br/>Automobilismo Virtual</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="sobre-lead">A Scuderia Overdrive nasceu com um objetivo ousado: ser a <strong>primeira equipe de Fórmula 1 do FiveM</strong>, integrando o esporte do automobilismo ao universo do GTA RP de forma profissional e apaixonada.</p>
+          <p>Em parceria principal com a cidade <strong>Velozes RP</strong>, buscamos mostrar que dentro e fora das pistas é possível gerar profissionais de verdade — pilotos, engenheiros, estrategistas e diretores de equipe que elevam o padrão do esporte virtual.</p>
+          <p>Mais do que velocidade, somos uma nova forma de enxergar as corridas no FiveM.</p>
+        </div>
+        <div class="sobre-values">
+          <h3 class="sobre-values-title">Nossos Valores</h3>
+          <ul class="values-list">
+            <li class="value-item">
+              <span class="value-icon">⬥</span>
+              <div>
+                <strong>Profissionalismo</strong>
+                <p>Levamos cada corrida como uma competição real</p>
+              </div>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">⬥</span>
+              <div>
+                <strong>Dedicação</strong>
+                <p>Comprometimento total com o trabalho e com a equipe</p>
+              </div>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">⬥</span>
+              <div>
+                <strong>Companheirismo</strong>
+                <p>Unidos dentro e fora dos boxes</p>
+              </div>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">⬥</span>
+              <div>
+                <strong>Respeito & Lealdade</strong>
+                <p>Base de toda grande equipe de corrida</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-num" data-target="1">0</span>
+          <span class="stat-label">Equipe no FiveM</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Comprometimento</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="1">0</span>
+          <span class="stat-label">Parceiro Principal</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Funções Disponíveis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILOTOS -->
+  <section class="pilotos" id="pilotos">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--dark">Grid de Diretores</span>
+        <h2 class="section-title section-title--light">Nossos<br/>Diretores</h2>
+      </div>
+      <div class="pilotos-grid" id="pilotosGrid">
+
+        <div class="piloto-card" data-piloto="1">
+          <div class="piloto-number">01</div>
+          <div class="piloto-img-wrap">
+            <div class="piloto-img-placeholder">
+              <img src="imagens/piloto1.png" alt="Tejonas" />
+            </div>
+          </div>
+          <div class="piloto-info">
+            <p class="piloto-role">Diretor Geral</p>
+            <h3 class="piloto-name">Tejonas Royal</h3>
+            <div class="piloto-flag">🇧🇷</div>
+            <div class="piloto-stats">
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Vitórias</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Pódios</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Poles</span></div>
+            </div>
+          </div>
+          <div class="piloto-accent"></div>
+        </div>
+
+        <div class="piloto-card" data-piloto="2">
+          <div class="piloto-number">02</div>
+          <div class="piloto-img-wrap">
+            <div class="piloto-img-placeholder">
+              <img src="imagens/piloto2.png" alt="Bruno"/>
+            </div>
+          </div>
+          <div class="piloto-info">
+            <p class="piloto-role">Co-Diretor Geral</p>
+            <h3 class="piloto-name">Bruno Royal</h3>
+            <div class="piloto-flag">🇧🇷</div>
+            <div class="piloto-stats">
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Vitórias</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Pódios</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Poles</span></div>
+            </div>
+          </div>
+          <div class="piloto-accent"></div>
+        </div>
+
+        <div class="piloto-card piloto-card--reserve" data-piloto="3">
+          <div class="piloto-number">03</div>
+          <div class="piloto-img-wrap">
+            <div class="piloto-img-placeholder">
+              <img src="imagens/piloto3.png" alt="Guts">
+            </div>
+          </div>
+          <div class="piloto-info">
+            <p class="piloto-role">Co-Founder</p>
+            <h3 class="piloto-name">Guts choutte</h3>
+            <div class="piloto-flag">🇧🇷</div>
+            <div class="piloto-stats">
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Vitórias</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Pódios</span></div>
+              <div class="pstat"><span class="pstat-num">—</span><span class="pstat-label">Poles</span></div>
+            </div>
+          </div>
+          <div class="piloto-accent"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROS -->
+  <section class="carros" id="carros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frota</span>
+        <h2 class="section-title">Nossos<br/>Carros</h2>
+      </div>
+      <div class="carros-showcase">
+
+        <div class="carro-item">
+          <div class="carro-visual">
+            <div class="carro-silhouette">
+              <!-- SVG Carro F1 -->
+              <img src="imagens/carro1.png" alt="OVD-01" style="width:100%;height:auto;"/>
+            </div>
+          </div>
+          <div class="carro-info">
+            <span class="carro-num">OVD-01</span>
+            <h3 class="carro-name">Monoposto Principal</h3>
+            <p class="carro-desc">O carro de corrida principal da Scuderia Overdrive. Desenvolvido com foco em velocidade máxima e aerodinâmica refinada para dominar as pistas do FiveM.</p>
+            <div class="carro-specs">
+              <div class="spec"><span class="spec-label">Motor</span><span class="spec-val">V6 Turbo Híbrido</span></div>
+              <div class="spec"><span class="spec-label">Transmissão</span><span class="spec-val">8 Marchas Semi-Auto</span></div>
+              <div class="spec"><span class="spec-label">Chassis</span><span class="spec-val">Fibra de Carbono</span></div>
+              <div class="spec"><span class="spec-label">Pneus</span><span class="spec-val">Pirelli F1</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carro-item carro-item--alt">
+          <div class="carro-info">
+            <span class="carro-num">OVD-02</span>
+            <h3 class="carro-name">Safety Car & Gestão</h3>
+            <p class="carro-desc">Veículo de gestão e safety car da equipe. Utilizado em treinos, parade laps e operações de pista para garantir segurança e protocolo das corridas.</p>
+            <div class="carro-specs">
+              <div class="spec"><span class="spec-label">Tipo</span><span class="spec-val">Safety / Gestão</span></div>
+              <div class="spec"><span class="spec-label">Uso</span><span class="spec-val">Treinos e Provas</span></div>
+              <div class="spec"><span class="spec-label">Equip.</span><span class="spec-val">Radio Equipe</span></div>
+              <div class="spec"><span class="spec-label">Cores</span><span class="spec-val">Preto & Branco</span></div>
+            </div>
+          </div>
+          <div class="carro-visual">
+            <div class="carro-silhouette carro-silhouette--safety">
+              <!-- SVG Safety Car -->
+              <img src="imagens/carro2.png" alt="OVD-02" style="width:100%;height:auto;"/>e
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carro-add-note">
+        <p>⬥ Imagens e especificações dos carros serão atualizadas conforme o desenvolvimento da equipe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE / FUNÇÕES -->
+  <section class="equipe" id="equipe">
+    <div class="equipe-bg">
+      <div class="equipe-pattern"></div>
+    </div>
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--dark">Estrutura</span>
+        <h2 class="section-title section-title--light">A Equipe<br/>Completa</h2>
+      </div>
+      <p class="equipe-intro">Na Scuderia Overdrive, cada função é essencial. Formamos profissionais completos do automobilismo virtual.</p>
+      <div class="funcoes-grid">
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 26 Q20 12 28 26" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="20" cy="16" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Piloto</h3>
+          <p>O coração da equipe. Responsável por levar o carro ao limite, executar estratégias e representar a Scuderia nas pistas.</p>
+          <span class="funcao-tag">Alta Demanda</span>
+        </div>
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="10" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 18 L18 22 L26 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Estrategista</h3>
+          <p>O cérebro das corridas. Define paradas nos boxes, gerencia pneus, clima e decide os momentos certos para cada manobra.</p>
+          <span class="funcao-tag">Vaga Aberta</span>
+        </div>
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M10 30 L15 15 L20 22 L25 10 L30 30Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Analista</h3>
+          <p>Coleta e interpreta dados de telemetria, comportamento do carro e dos adversários para otimizar a performance da equipe.</p>
+          <span class="funcao-tag">Vaga Aberta</span>
+        </div>
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 32 C10 25 30 25 30 32" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M16 20 L16 26 M24 20 L24 26" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Mecânico</h3>
+          <p>Cuida do carro nos boxes, realiza as paradas e garante que o monoposto esteja sempre em condições ideais de corrida.</p>
+          <span class="funcao-tag">Vaga Aberta</span>
+        </div>
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 8 L24 16 L32 17 L26 23 L28 32 L20 28 L12 32 L14 23 L8 17 L16 16Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h3>Treinador</h3>
+          <p>Desenvolve os pilotos e membros da equipe, aprimora técnicas de pilotagem e eleva o nível geral da Scuderia.</p>
+          <span class="funcao-tag">Vaga Aberta</span>
+        </div>
+
+        <div class="funcao-card">
+          <div class="funcao-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="14" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 14 L14 10 M26 14 L26 10" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="16" y="20" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Diretor de Equipe</h3>
+          <p>Lidera e toma as decisões finais. Coordena todas as funções, gere recursos e representa a Scuderia externamente.</p>
+          <span class="funcao-tag">Liderança</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="parceiros" id="parceiros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Parceiros</span>
+        <h2 class="section-title">Nossas<br/>Parcerias</h2>
+      </div>
+      <div class="parceiros-grid">
+        <div class="parceiro-card parceiro-card--principal">
+          <div class="parceiro-badge">PARCEIRO PRINCIPAL</div>
+          <div class="parceiro-logo">
+            <span class="parceiro-logo-text">VELOZES RP</span>
+          </div>
+          <p>Nossa parceria principal. A cidade Velozes RP é onde a Scuderia Overdrive nasce e corre, sendo o cenário das nossas competições e o lar da equipe no FiveM.</p>
+          <div class="parceiro-tags">
+            <span>Cidade FiveM</span>
+            <span>Sede da Scuderia</span>
+            <span>Corridas Oficiais</span>
+          </div>
+        </div>
+        <div class="parceiro-card parceiro-card--add">
+          <div class="parceiro-logo parceiro-logo--add">
+            <img src="imagens/velozes.png" alt="Logo Velozes RP"/>
+          </div>
+          <p class="parceiro-add-text">Interessado em fazer parte do nosso universo? Entre em contato para se tornar um parceiro da Scuderia Overdrive.</p>
+          <a href="#ingresso" class="btn btn--ghost btn--sm">Falar Conosco</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANCO DIGITAL -->
+  <section class="banco" id="banco">
+    <div class="container">
+      <div class="banco-content">
+        <div class="banco-text">
+          <span class="section-tag section-tag--dark">Banco Digital</span>
+          <h2 class="banco-title">Scuderia Bank</h2>
+          <p>A Scuderia Overdrive possui seu próprio banco digital interno. Gerencie seus recursos, receba pagamentos por funções desempenhadas e participe da economia da equipe de forma profissional.</p>
+          <ul class="banco-features">
+            <li>⬥ Conta exclusiva para membros</li>
+            <li>⬥ Pagamento por corridas e funções</li>
+            <li>⬥ Gestão financeira da Scuderia</li>
+            <li>⬥ Transparência total nas transações</li>
+          </ul>
+        </div>
+        <div class="banco-card">
+          <div class="banco-card-inner">
+            <div class="banco-card-top">
+              <span class="banco-card-logo">OVD</span>
+              <div class="banco-chip"></div>
+            </div>
+            <div class="banco-card-number">**** **** **** ****</div>
+            <div class="banco-card-bottom">
+              <div>
+                <p class="banco-card-label">TITULAR</p>
+                <p class="banco-card-val">MEMBRO OVERDRIVE</p>
+              </div>
+              <div>
+                <p class="banco-card-label">SCUDERIA</p>
+                <p class="banco-card-val">OVERDRIVE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGRESSO -->
+  <section class="ingresso" id="ingresso">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--dark">Faça Parte</span>
+        <h2 class="section-title section-title--light">Ingressar na<br/>Scuderia</h2>
+      </div>
+      <p class="ingresso-intro">Quer fazer parte da primeira equipe de Fórmula 1 do FiveM? Preencha o formulário abaixo e entraremos em contato para avaliar seu perfil.</p>
+
+      <div class="form-wrap">
+        <form class="ingresso-form" id="ingressoForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome / Nick no RP</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome ou nick" required />
+            </div>
+            <div class="form-group">
+              <label for="discord">Discord</label>
+              <input type="text" id="discord" name="discord" placeholder="usuario#0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="funcao">Função de Interesse</label>
+            <select id="funcao" name="funcao" required>
+              <option value="">Selecione uma função</option>
+              <option value="piloto">Piloto</option>
+              <option value="estrategista">Estrategista</option>
+              <option value="mecanico">Mecânico</option>
+              <option value="analista">Analista</option>
+              <option value="treinador">Treinador</option>
+              <option value="diretor">Diretor de Equipe</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="experiencia">Experiência no FiveM / Automobilismo</label>
+            <textarea id="experiencia" name="experiencia" rows="4" placeholder="Conte um pouco sobre sua experiência..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="motivacao">Por que quer fazer parte da Scuderia Overdrive?</label>
+            <textarea id="motivacao" name="motivacao" rows="4" placeholder="Sua motivação..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar Candidatura</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✓</div>
+          <h3>Candidatura Enviada!</h3>
+          <p>Obrigado pelo interesse na Scuderia Overdrive. Nossa equipe entrará em contato em breve pelo Discord.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">OVERDRIVE</div>
+          <p>A primeira equipe de Fórmula 1 do FiveM. Automobilismo, profissionalismo e paixão pelo esporte.</p>
+          <div class="footer-socials">
+            <a href="https://discord.com/invite/vNrwNQGJ5A" class="social-link" aria-label="Discord">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/apxgp_overdrive_formula1_team/" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre a Equipe</a></li>
+            <li><a href="#pilotos">Pilotos</a></li>
+            <li><a href="#carros">Carros</a></li>
+            <li><a href="#equipe">Funções</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Parceiro Principal</h4>
+          <ul>
+            <li><a href="https://discord.com/invite/vNrwNQGJ5A">Velozes RP</a></li>
+            <li><a href="#banco">Scuderia Bank</a></li>
+            <li><a href="#ingresso">Candidatura</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Para parcerias, candidaturas e dúvidas, entre em contato pelo Discord da equipe.</p>
+          <a href="https://discord.com/invite/vNrwNQGJ5A" class="btn btn--ghost btn--sm">Contato via Discord</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Scuderia Overdrive. Todos os direitos reservados.</p>
+        <p class="footer-credit">Primeira Equipe de F1 do FiveM — Velozes RP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
