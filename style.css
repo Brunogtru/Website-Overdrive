@@ -392,10 +392,6 @@ section {
   margin-bottom: 80px;
 }
 
-.section-header--light {
-  /* nothing extra needed */
-}
-
 .section-tag {
   display: inline-flex;
   align-items: center;
@@ -1164,8 +1160,7 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  color: var(--gray-4);
-  +
+  color: var(--gray-4)
 }
 
 .parceiro-card p {
